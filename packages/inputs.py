@@ -1,7 +1,8 @@
 class UserInput(object):
-    mad_lip_inputs = []
+    mad_lib_inputs = []
 
-    def populate_input_array(self, mad_lip_inp_amt):
+    def populate_input_array(self, mad_lib_int_amt):
 
-        for i in range(mad_lip_inp_amt):
-            self.mad_lip_inputs.append(input("Enter input: "))
+        for i in range(mad_lib_int_amt):
+            self.mad_lib_inputs.append(input("Enter input: "))
+        return self.mad_lib_inputs

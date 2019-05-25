@@ -1,2 +1,2 @@
-from .prompts import MadLipPrompt
+from .prompts import MadLibPrompt
 from .inputs import UserInput

@@ -2,6 +2,8 @@ import packages
 
 if '__main__' == __name__:
 
-    user = packages.inputs.UserInput()
-    user.populate_input_array(8)
-    packages.prompts.MadLipPrompt.be_kind(user.mad_lip_inputs)
+    user = packages.prompts.MadLibPrompt()
+    user.mad_lib_chooser()
+    user.translate_mad_lib()
+    user.populate_mad_lib()
+    user.mad_lib_caller()
