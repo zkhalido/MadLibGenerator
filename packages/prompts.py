@@ -14,6 +14,7 @@ class MadLibPrompt(object):
         print("Choose a mad lib.")
         self.mad_lib_num = input("(1) be kind\n"
                                  "(2) war\n")
+        return self.mad_lib_num
 
     def populate_mad_lib(self):
         self.mad_lib_inputs = inputs.UserInput.populate_input_array(self, int(self.input_amount_dict[self.mad_lib_name]))
@@ -25,7 +26,7 @@ class MadLibPrompt(object):
         self.mad_lib_method_dict[int(self.mad_lib_num)](self, self.mad_lib_inputs)
 
     def be_kind(self, input_array):
-        self.be_kind_lib = ("Be kind to your {0}-footed {1}\n"
+        self.be_kind_lib = ("\nBe kind to your {0}-footed {1}\n"
                       "For a duck may be somebody's {2},\n"
                       "Be kind to your {3} in {4}\n"
                       "Where the weather is always {5}.\n"
@@ -34,9 +35,10 @@ class MadLibPrompt(object):
                       input_array[1], input_array[3], input_array[4], input_array[5]))
 
         print(self.be_kind_lib)
+        return self.be_kind_lib
 
     def war(self, input_array):
-        self.war_lib = ("It was during the battle of {0} when I was running through a {1}\n"
+        self.war_lib = ("\nIt was during the battle of {0} when I was running through a {1}\n"
                    "when a {2} went off right next to my platoon. Our {3} yelled for\n"
                    "us to {4} to the nearest {5} we could find. When we got to the {6}\n"
                    "we {7} to start a fire. As we were starting the fire the enemy\n"
@@ -49,6 +51,7 @@ class MadLibPrompt(object):
                    input_array[6], input_array[11]))
 
         print(self.war_lib)
+        return self.war_lib
 
     mad_lib_method_dict = {
         1 : be_kind,
