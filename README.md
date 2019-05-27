@@ -26,4 +26,5 @@ OK
 * zkhalido
 
 
-All contributors can be found on GitHub. 
+All contributors can be found on GitHub.  
+
