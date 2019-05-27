@@ -3,6 +3,8 @@ python:
   - "3.6"
 
 script:
+  - coverage run -m unittest
+  - coverage xml -i
   - sonar-scanner
 
 addons:
