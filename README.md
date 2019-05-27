@@ -6,14 +6,14 @@ words to create funky mad libs.
 To run MadLibGenerator, fromthe directory folder run:
  $ python main.py
 
-### Running unittests
+## Running unittests
 
 To run unittests, use command:
- $ python -m unittest
- ----------------------------------------------------------------------
- Ran 8 tests in 0.016s
+$ python -m unittest
+----------------------------------------------------------------------
+Ran 8 tests in 0.016s
 
- OK
+OK
 
 ## Contributors 
 zkhalido
